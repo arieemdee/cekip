@@ -1,20 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>MD Engine</title>
-    <link rel="shortcut icon" href="favicon.ico">
-    <style>
-       span {
-           color: green;
-       }
-    </style>
-    <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script>    
-        $.getJSON("https://api.ipify.org?format=json", function(data) { $("#ip").html(data.ip);})
-    </script>
+  <title>MD Engine</title>
+  <link rel="shortcut icon" href="favicon.ico">
+  <style> span{color: green;} </style>
+  <script src= "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+      $.getJSON("https://api.ipify.org?format=json", function(data) { $("#ip").html(data.ip);})
+  </script>
 </head>
 <body>
-   <span>Current IP Address: </span>
-   <span id="ip"></span>
+  <span>Current IP Address: </span>
+  <span id="ip"></span>
 </body>
 </html>
